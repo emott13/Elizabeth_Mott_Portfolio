@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-familiy: 'Advent Pro';
+
+}
+
+body{
+    font-family: var(--font-familiy);
+}
+
+/* ---- REUSABLE STYLES ---- */
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+/* ---- HEADER ---- */
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: grey;
+    height: 100px;
+}
+
+/* ---- HERO ---- */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---- personal ---- */
+
+
+.personal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border: 2px solid black;
+    height: calc(350px + 4rem);
+    width: 1140px;
+}
+
+/* .personal-info,
+.contact{
+
+} */
+
+/* ---- information ---- */
+
+.information{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    border: 2px solid black;
+    width: 1140px;
+}
+
+.experience,
+.projects{
+    margin: 1rem;
+    /* height: 350px; */
+    width: 100%;
+}
+
+.contact,
+.experience,
+.projects{
+    background-color: orange;
+}
+
+/* ---- projects ---- */
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+}
+
+.projects-info > button{
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 200px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.projImg{
+    width: auto;
+    height: 100%;
+    background-color: #000;
+}
+
+button > img{
+    opacity: 0.85;
+    height: auto;
+    width: 100%;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+button > img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* ---- IFRAMES ---- */
+
+/* iframe{
+    /* overflow: hidden; */
+    /* border: 2px solid black;
+    border-radius: 16px;
+    height: 150px;
+    width: 200px;
+} */ 
