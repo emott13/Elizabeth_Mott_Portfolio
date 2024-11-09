@@ -7,7 +7,9 @@
 :root{
     --font-familiy: 'Advent Pro';
     --color-1: #101010;
-    --color-2: #dddad5;
+    --color-2: #ffffff;
+    --main-color: #8f1fd9;
+    --highlight-color: #1fd9c0;
     --text-shadow: 1px 1px 9px #8f1fd9;
     --box-shadow: 3px 3px 20px #8f1fd9;
     --box-shadow-small: 2px 1px 12px #8f1fd9;
@@ -55,7 +57,6 @@ p{
 .image-container{
     display: flex;
     justify-content: center;
-    border: 2px solid #8f1fd9;
     border-radius: 60%;
     overflow: hidden;
     background-color: var(--color-2);
@@ -65,12 +66,10 @@ p{
 
 .image-container > img{
     transform: scale(1.3) scaleX(-1);
-    /* transform: scaleX(-1); */
     position: relative;
     left: -3px;
     height: 100%;
     width: auto;
-    /* overflow: hidden; */
 }
 
 /* ---- personal ---- */
@@ -79,7 +78,6 @@ p{
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    /* border: 2px solid var(--color-2); */
     height: calc(350px + 4rem);
     width: 1140px;
 }
@@ -109,6 +107,7 @@ p{
 }
 
 #btn-start-animation{
+    border: none;
     border-radius: 5px;
     padding: 10px;
     font-family: var(--font-familiy);
@@ -175,7 +174,6 @@ p{
 }
 
 .projects-info > button{
-    /* margin-bottom:; */
     border: 2px solid var(--color-1);
     border-radius: 16px;
     overflow: hidden;
@@ -202,4 +200,53 @@ button > img{
 button > img:hover{
     transform: scale(1);
     filter: brightness(90%);
+}
+
+
+/* ---- GLOW ANIMATIONS ---- */
+
+.glow {
+    box-shadow: 0 0 20px var(--main-color);
+    animation: movingGlow 5s infinite linear;
+}
+
+@keyframes movingGlow {
+    0% {
+        box-shadow: 3px 3px 20px var(--main-color);
+    }
+    25% {
+        box-shadow: 3px 3px 15px var(--highlight-color);
+    }
+    50% {
+        box-shadow: 3px 3px 10px var(--main-color);
+    }
+    75%{
+        box-shadow: 3px 3px 15px var(--highlight-color);
+    }
+    100%{
+        box-shadow: 3px 3px 20px var(--main-color);
+    }
+}
+
+.small-glow{
+    box-shadow: 0 0 12px var(--main-color);
+    animation: smallGlow 10s infinite linear;
+}
+
+@keyframes smallGlow{
+    0% {
+        box-shadow: 2px 3px 12px var(--main-color);
+    }
+    25% {
+        box-shadow: 2px 3px 11px var(--highlight-color);
+    }
+    50% {
+        box-shadow: 2px 3px 10px var(--main-color);
+    }
+    75%{
+        box-shadow: 2px 3px 11px var(--highlight-color);
+    }
+    100%{
+        box-shadow: 2px 3px 12px var(--main-color);
+    }
 }

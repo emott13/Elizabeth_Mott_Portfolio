@@ -74,6 +74,9 @@ function animate(){
         });
     }, rowDelay);
 
+    let startBtn = document.getElementsByClassName('glow')[0];
+    startBtn.className = '';
+
     setTimeout(() => {
         rows[2].forEach((item, index) => {
             move(item.element, item.top, item.left, item.span, index * 100);  
@@ -89,14 +92,16 @@ function move(element, targetTop, targetLeft, span, delay = 0) {
     span.style.visibility = 'hidden';
     span.style.opacity = 0;
     element.style.visibility = 'visible';
+    
     function animateFrame() {
-        
+        let child = '';
         if (left > targetLeft) left -= speed; 
 
         
         element.style.top = `${top}px`; 
         element.style.left = `${left}px`;
-
+        child = element.getElementsByClassName('projectLinks')[0];
+        child.classList.add('small-glow')
         
         if (left > targetLeft) {
             requestAnimationFrame(animateFrame);
