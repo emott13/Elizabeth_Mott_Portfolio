@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    margin: 40px auto;
+    font-family: 'Lucida Sans';
+    font-size: 18px;
+}
+
+h1{
+    padding: 1rem;
+}
+
+h4{
+    margin: 1rem auto;
+}
+h4 > span{
+    padding: 10px;
+}
+
+.title{
+    padding: 8px 0;
+    font-style: strong;
+    font-size: 18px;
+    color: #a16ac6;
+    border-bottom: 2px solid black;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 940px;
+    border-style: inset;
+}
+
+.column,
+.column2{
+    font-family: Calibri;
+    padding: 20px;
+    margin: 15px;
+}
+
+.column{
+    width: 40%;
+}
+.column2{
+    width: 35%;
+}
+
+ul{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+p{
+    margin: 5px 0;
+}
+
+h4 > img{
+    margin: 12px 2px 0 2px;
+    height: 28px;
+}
+
+.job > ul:last-child{
+    margin-bottom: 1rem;
+}
+
+.jobTitle{
+    font-weight: bold;
+}
+
+.school{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.timeFrame{
+    font-style: italic;
+}

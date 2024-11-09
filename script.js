@@ -4,12 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function ready(){
+    animate();
+}
+
+function buttons(){
     const buttons = document.querySelectorAll('.projectLinks');
     buttons.forEach(button => {
         button.addEventListener('click', handleClick);
     });
 
-    animate();
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach(button => {
+        button.addEventListener('click', handleClick);
+    })
 }
 
 function handleClick(event){
@@ -26,6 +33,8 @@ function handleClick(event){
         quiz: 'https://emott13.github.io/CSET105_Final_2/',
         music: 'https://emott13.github.io/CSET110_Weekly_Assignment_2/',
         lavendar: 'https://emott13.github.io/CSET110_project/',
+        resume: '/Resume/resume.html',
+        github: 'https://github.com/emott13',
     };
 
     if (links[alt]) {
