@@ -116,9 +116,12 @@ p{
     height: 40px;
 }
 
+#arrow{
+    filter: drop-shadow(1px 1px 2px #8f1fd9);
+}
+
 .icon,
 .contact-info > img{
-    -webkit-filter: drop-shadow(var(--box-shadow-small));
     filter: drop-shadow(var(--box-shadow-small));
 }
 
