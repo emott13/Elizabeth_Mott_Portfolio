@@ -6,11 +6,17 @@
 
 :root{
     --font-familiy: 'Advent Pro';
-
+    --color-1: #101010;
+    --color-2: #dddad5;
+    --text-shadow: 1px 1px 9px #8f1fd9;
+    --box-shadow: 3px 3px 20px #8f1fd9;
+    --box-shadow-small: 2px 1px 12px #8f1fd9;
 }
 
 body{
     font-family: var(--font-familiy);
+    background-color: var(--color-1);
+    color: var(--color-2);
 }
 
 /* ---- REUSABLE STYLES ---- */
@@ -18,22 +24,22 @@ body{
 h2{
     font-size: 40px;
     font-weight: 600;
+    text-shadow: var(--text-shadow);
+}
+
+h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: var(--text-shadow);
 }
 
 p{
     margin-top: 1rem;
     font-size: 20px;
-}
-
-/* ---- HEADER ---- */
-
-header{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    border: 2px solid black;
-    background-color: grey;
-    height: 100px;
+    text-shadow: var(--text-shadow);
 }
 
 /* ---- HERO ---- */
@@ -42,6 +48,15 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: .5rem;
+    margin-bottom: 4rem;
+}
+
+.image-container{
+    border: 2px solid #8f1fd9;
+    background-color: var(--color-2);
+    width: 44%;
+    box-shadow: var(--box-shadow);
 }
 
 /* ---- personal ---- */
@@ -50,7 +65,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    border: 2px solid black;
+    /* border: 2px solid var(--color-2); */
     height: calc(350px + 4rem);
     width: 1140px;
 }
@@ -68,7 +83,6 @@ header{
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
-    border: 2px solid black;
     width: 1140px;
 }
 
@@ -80,33 +94,37 @@ header{
     width: 20%;
 }
 
-.contact,
-.experience,
-.projects{
-    background-color: orange;
-}
-
 #btn-start-animation{
     border-radius: 5px;
     padding: 10px;
     font-family: var(--font-familiy);
+    font-size: 20px;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow-small);
 }
 
 .contact-info{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-shadow: var(--text-shadow);
 }
 
-.resume,
-.contact-info > img{
-    margin: 1rem;
+#arrow,
+.icon{
+    margin-top: 1rem;
     height: 40px;
 }
 
-.image-container{
-    border: 2px solid #000;
-    background-color: #000;
-    width: 44%;
+.icon,
+.contact-info > img{
+    -webkit-filter: drop-shadow(var(--box-shadow-small));
+    filter: drop-shadow(var(--box-shadow-small));
+}
+
+.contact-info > img{
+    margin: 1rem;
+    height: 30px;
 }
 
 
@@ -133,28 +151,31 @@ header{
     opacity: 0;
     transition: opacity 1s ease-in;
     visibility: hidden;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-right: 0;
     width: 110px;
+    text-shadow: var(--text-shadow);
 }
 
 .projects-info > button{
-    border: 2px solid black;
+    /* margin-bottom:; */
+    border: 2px solid var(--color-1);
     border-radius: 16px;
     overflow: hidden;
     height: 200px;
     width: 150px;
     cursor: pointer;
+    box-shadow: var(--box-shadow-small);
 }
 
 .projImg{
     width: auto;
     height: 100%;
-    background-color: #000;
+    background-color: var(--color-1);
 }
 
 button > img{
-    opacity: 0.85;
+    filter: brightness(60%);
     height: auto;
     width: 100%;
     transform: scale(1.15);
@@ -163,5 +184,5 @@ button > img{
 
 button > img:hover{
     transform: scale(1);
-    opacity: 1;
+    filter: brightness(90%);
 }

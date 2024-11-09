@@ -43,13 +43,13 @@ function animate(){
             { element: document.getElementById('animation3'), top: 0, left: 626, span: document.querySelector('#animation3 span') },
         ],
         [
-            { element: document.getElementById('animation4'), top: 205, left: 26, span: document.querySelector('#animation4 span') },
-            { element: document.getElementById('animation5'), top: 205, left: 326, span: document.querySelector('#animation5 span') },
-            { element: document.getElementById('animation6'), top: 205, left: 626, span: document.querySelector('#animation6 span') },],
+            { element: document.getElementById('animation4'), top: 220, left: 26, span: document.querySelector('#animation4 span') },
+            { element: document.getElementById('animation5'), top: 220, left: 326, span: document.querySelector('#animation5 span') },
+            { element: document.getElementById('animation6'), top: 220, left: 626, span: document.querySelector('#animation6 span') },],
         [
-            { element: document.getElementById('animation7'), top: 410, left: 26, span: document.querySelector('#animation7 span') },
-            { element: document.getElementById('animation8'), top: 410, left: 326, span: document.querySelector('#animation8 span') },
-            { element: document.getElementById('animation9'), top: 410, left: 626, span: document.querySelector('#animation9 span') },
+            { element: document.getElementById('animation7'), top: 440, left: 26, span: document.querySelector('#animation7 span') },
+            { element: document.getElementById('animation8'), top: 440, left: 326, span: document.querySelector('#animation8 span') },
+            { element: document.getElementById('animation9'), top: 440, left: 626, span: document.querySelector('#animation9 span') },
         ],
     ];
 
