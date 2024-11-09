@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bubbler+One&family=Marvel&family=Poiret+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/318fe15147.js" crossorigin="anonymous"></script>
-    <script src="script.js" async></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -19,93 +19,111 @@
     <section class="hero">
 
         <div class="personal">
-            <div class="personal-info">
-                <h2>Hi, I'm Ellie.</h2>
-                <p>Software Engineering Student at Thaddeus Stevens College of Technology with a passion for front-end development</p>
-                <p>I have advanced beginner knowledge of HTML, CSS, and Javascript.</p>
-                <!-- <p></p> -->
-                <div class="personal-photo"></div>
-            </div>
+            <div class="personal-container">
+                <div class="personal-info">
+                    <h2>Hi, I'm Ellie.</h2>
+                    <p>A software engineering student at  with a passion for front-end development</p>
+                    <p>I have worked on 10+ website projects during my semester, using HTML/CSS and Javascript.</p>
+                    <p>I have enjoyed doing web design and I am looking forward to learning PHP, Python, SQL and OODB in the upcoming semester.</p>
+                    <p>Overall, I am very excited to continue expanding my knowledge and skills in every area moving forward.</p>
+                    <!-- <p></p> -->
+                </div>
 
-            <div class="contact">
-                <div class="contact-info">
-                   <i class="fa-brands fa-github"></i>
-                   <i class="fas fa-phone"></i>
-                   <i class="fas fa-envelope"></i>
+                <!-- <div class="contact">
+                    <div class="contact-info">
+                        <img src="/Images/document-outline.svg" alt="resume">
+                        <img src="/Images/mail-outline.svg" alt="email">
+                        <img src="/Images/call-outline.svg" alt="phone">
+                        <img src="/Images/logo-github.svg" alt="">
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="image-container">
+                <div class="img">
+                    <div><img src="" alt=""></div>
                 </div>
             </div>
+            
         </div>
 
         <div class="information">
             <div class="experience">
                 <div class="experience-info">
-
+                    <button id="btn-start-animation">Check out my student projects</button>
+                </div>
+                <h3>contact me</h3>
+                <div class="contact-info">
+                    <img src="/Images/document-outline.svg" alt="resume">
+                    <img src="/Images/mail-outline.svg" alt="email">
+                    <img src="/Images/call-outline.svg" alt="phone">
+                    <img src="/Images/logo-github.svg" alt="">
                 </div>
             </div>
 
             <div class="projects">
                 
-                <div class="projects-info">
-                    <button class="projectLinks">
-                        <img src="/Images/project_1.jpg" alt="" class="projImg">
+                <div class="projects-info" id="animation1">
+                    <button class="projectLinks" onclick="ready()">
+                        <img src="/Images/project_1.jpg" alt="stated" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET110_Final_P1/"></a>
+                    <span><h4>Website copy: </h4>exploring more professional looking CSS layouts and learning jQuery slick carousel implimentation.</span>
                 </div>
 
-                <div class="projects-info">
-                    <button class="projectLinks btn1">
-                        <img src="/Images/project_2.jpg" alt="" class="projImg">
+                <div class="projects-info" id="animation2">
+                    <button class="projectLinks btn1" onclick="ready()">
+                        <img src="/Images/project_2.jpg" alt="omnifood" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET110_Lecture_6_Assignment/"></a>
+                    <span><h4>Website copy: </h4>exploring more professional looking CSS layouts.</span>
                 </div>
                 
-                <div class="projects-info">
+                <div class="projects-info" id="animation3">
                     <button class="projectLinks btn1">
-                        <img src="/Images/project_3.jpg" alt="" class="projImg">
+                        <img src="/Images/project_3.jpg" alt="ticTacToe" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET115_Final/"></a>
+                    <span><h4>Tic Tac Toe: </h4>practicing DOM manipulation and responsive web design.</span>
                 </div>
 
-                <div class="projects-info">
+                <div class="projects-info" id="animation4">
                     <button class="projectLinks">
-                        <img src="/Images/project_4.jpg" alt="" class="projImg">
+                        <img src="/Images/project_4.jpg" alt="rockPaperScissors" class="projImg">
                     </button>
-                    <a href=""></a>
+                    <span><h4>Rock-Paper-Scissors: </h4>practicing DOM manipulation and JS functions.</span>
                 </div>
 
-                <div class="projects-info">
+                <div class="projects-info" id="animation5">
                     <button class="projectLinks">
-                        <img src="/Images/project_5.jpg" alt="" class="projImg">
+                        <img src="/Images/project_5.jpg" alt="grocery" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET105_Final_1/"></a>
+                    <span><h4>Grocery list manager: </h4>practicing content manipulation using DOM with JS.</span>
                 </div>
 
-                <div class="projects-info">
+                <div class="projects-info" id="animation6">
                     <button class="projectLinks">
-                        <img src="/Images/project_7.jpg" alt="" class="projImg">
+                        <img src="/Images/project_7.jpg" alt="calculator" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET115_Weekly_Assignment_2/"></a>
+                    <span><h4>Calculator: </h4>practicing JS math related functions.</span>
                 </div>
 
-                <div class="projects-info">
+                <div class="projects-info" id="animation7">
                     <button class="projectLinks">
-                        <img src="/Images/project_8.jpg" alt="" class="projImg">
+                        <img src="/Images/project_8.jpg" alt="quiz" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET105_Final_2/"></a>
+                    <span><h4>Quiz: </h4>exploring radio button usage and content manipulation using DOM.</span>
                 </div>
 
-                <div class="projects-info">
+                <div class="projects-info" id="animation8">
                     <button class="projectLinks">
-                        <img src="/Images/project_9.jpg" alt="" class="projImg">
+                        <img src="/Images/project_9.jpg" alt="music" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET110_Weekly_Assignment_2/"></a>
+                    <span><h4>Music Store: </h4>exploring adding new elements to a page using DOM with JS.</span>
                 </div>
 
-                <div class="projects-info">
+                <div class="projects-info" id="animation9">
                     <button class="projectLinks">
-                        <img src="/Images/project_6.jpeg" alt="" class="projImg">
+                        <img src="/Images/project_6.jpeg" alt="lavendar" class="projImg">
                     </button>
-                    <a href="https://emott13.github.io/CSET110_project/"></a>
+                    <span><h4>Basic website: </h4>exploring responsive web design using Media queries.</span>
                 </div>
 
             </div>
