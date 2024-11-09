@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let showProjects = document.getElementById('btn-start-animation')
     showProjects.addEventListener('click', ready);
-    // ready();
 })
 
 function ready(){
