@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let showProjects = document.getElementById('btn-start-animation')
-    showProjects.addEventListener('click', ready);
-})
-
-function ready(){
-    animate();
-}
-
-function buttons(){
+    showProjects.addEventListener('click', animate);
+    
     const buttons = document.querySelectorAll('.projectLinks');
     buttons.forEach(button => {
         button.addEventListener('click', handleClick);
@@ -17,7 +11,7 @@ function buttons(){
     icons.forEach(button => {
         button.addEventListener('click', handleClick);
     })
-}
+})
 
 function handleClick(event){
     const button = event.target;
