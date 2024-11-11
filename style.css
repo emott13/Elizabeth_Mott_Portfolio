@@ -114,6 +114,7 @@ p{
     font-size: 20px;
     text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow-small);
+    cursor: pointer;
 }
 
 .contact-info{
@@ -136,6 +137,10 @@ p{
 .icon,
 .contact-info > img{
     filter: drop-shadow(var(--box-shadow-small));
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .contact-info > img{
