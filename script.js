@@ -27,13 +27,13 @@ function handleClick(event){
         stated: 'https://emott13.github.io/CSET110_Final_P1/',
         omnifood: 'https://emott13.github.io/CSET110_Lecture_6_Assignment/',
         ticTacToe: 'https://emott13.github.io/CSET115_Final/',
-        rockPaperScissors: '',
+        rockPaperScissors: 'https://emott13.github.io/CSET105_Weekly_Assignment_2/',
         grocery: 'https://emott13.github.io/CSET105_Final_1/',
         calculator: 'https://emott13.github.io/CSET115_Weekly_Assignment_2/',
         quiz: 'https://emott13.github.io/CSET105_Final_2/',
         music: 'https://emott13.github.io/CSET110_Weekly_Assignment_2/',
         lavendar: 'https://emott13.github.io/CSET110_project/',
-        resume: '/Resume/resume.html',
+        resume: 'Resume/resume.html',
         github: 'https://github.com/emott13',
     };
 
